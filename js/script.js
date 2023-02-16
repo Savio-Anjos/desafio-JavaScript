@@ -7,6 +7,7 @@
  const displayData = () => {
     console.log("Desafio 1:")
     console.log(userData)
+    console.log("----------------------------------")
  }
 
  displayData()
@@ -30,11 +31,16 @@ var students = [
        id: 3, 
        nome: "Carlos", 
        cidade: "Vitória da Conquista",
-     
-      }
+      },
+      {
+         id: 4, 
+         nome: "Pedro", 
+         cidade: "São Paulo",
+        },
+      
 ]
 
- const displayStudents = () => {
+ const displayStudentsOne = () => {
    students.map((student) => {
       const city = student.cidade;
 
@@ -48,11 +54,36 @@ var students = [
    return students;
  }
  
- displayStudents()
- console.log("Desafio 2:")
- console.log(students)
+ displayStudentsOne()
+ console.log("Desafio 2:");
+ console.log(students);
+ console.log("----------------------------------")
 
- 
 
+ //Desafio 2 --------------------------------------- 
  
+ const displayStudentsTwo = () => {
+   students.map((student) => {
+      const city = student.cidade;
+
+      if(city === "São Paulo") {
+        const studentSaoPaulo = {
+         id: student.id,
+         name: student.nome,
+         cidade: student.cidade
+        }
+        
+        console.log("Desafio 3:")
+        console.log(studentSaoPaulo)
+
+       const filterStudents = students.filter(student => student.cidade != "São Paulo")
+       console.log("Array filtrado:")
+        console.log(filterStudents)
+        console.log("----------------------------------")
+        
+      }
+   })
+ }
+
+ displayStudentsTwo()
 
