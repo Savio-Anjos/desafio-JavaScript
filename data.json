@@ -1,0 +1,20 @@
+{
+    "students": [
+        {
+         "id": 1,
+         "nome": "Ricardo", 
+         "cidade": "Jaguaquara"
+        },
+        {
+         "id": 2, 
+         "nome": "Maria", 
+         "cidade": "Belo Horizonte"
+        },
+        {
+         "id": 3, 
+         "nome": "Carlos", 
+         "cidade": "Vitória da Conquista"
+        }
+    ]
+   
+}
