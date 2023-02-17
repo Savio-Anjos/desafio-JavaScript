@@ -87,3 +87,15 @@ var students = [
 
  displayStudentsTwo()
 
+
+//Desafio 3 --------------------------------------- 
+var variavelGlobal = "JavaScript";
+const variaveis = () => {
+   let variavelLocal = "Python";
+   
+   console.log("Desafio 4:");
+   console.log(variavelGlobal)
+   console.log("----------------------------------")
+}
+
+variaveis()
