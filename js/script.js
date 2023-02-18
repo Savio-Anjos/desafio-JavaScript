@@ -14,7 +14,7 @@
 
 //Desafio 2 ---------------------------------------
 
-var students = [
+const students = [
    {
        id: 1,
        nome: "Ricardo", 
@@ -60,7 +60,7 @@ var students = [
  console.log("----------------------------------")
 
 
- //Desafio 2 --------------------------------------- 
+ //Desafio 3 --------------------------------------- 
  
  const displayStudentsTwo = () => {
    students.map((student) => {
@@ -88,7 +88,7 @@ var students = [
  displayStudentsTwo()
 
 
-//Desafio 3 --------------------------------------- 
+//Desafio 4 --------------------------------------- 
 var variavelGlobal = "JavaScript";
 const variaveis = () => {
    let variavelLocal = "Python";
@@ -98,4 +98,50 @@ const variaveis = () => {
    console.log("----------------------------------")
 }
 
-variaveis()
+variaveis();
+
+
+
+//Desafio 5 --------------------------------------- 
+
+const fruits = [
+   {
+      id: 1,
+      name: "apple",
+   },
+   {
+      id: 2,
+      name: "strawberry",
+   },
+   {
+      id: 3,
+      name: "grape",
+   },
+   {
+      id: 4,
+      name: "watermelon",
+   }
+]
+
+const orderArray = () => {
+   const orderFruits = fruits.sort(fruits.name)
+   fruits.sort(function(a, b) {
+      if(a.name < b.name) {
+         return -1;
+      } else {
+         return true;
+      }
+   });
+}
+
+console.log("Desafio 5:");
+console.log(fruits);
+console.log("----------------------------------")
+
+orderArray();
+
+
+
+
+
+
