@@ -141,7 +141,28 @@ console.log("----------------------------------")
 orderArray();
 
 
+//Desafio 6 --------------------------------------- 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const evensNumbers = [];
+const evenNumbersVerification = () => {
+   numbers.map((number) => {
+      const checkNumber = number / 2
+      const verificationNumber = Number.isInteger(checkNumber)
 
+      if(verificationNumber === true) {
+   
+         evensNumbers.push(number);
+      }
+   })
+
+   
+}
+
+evenNumbersVerification();
+
+console.log("Desafio 6:");
+console.log(evensNumbers);
+console.log("----------------------------------")
 
 
 
