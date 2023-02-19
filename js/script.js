@@ -166,3 +166,23 @@ console.log("----------------------------------")
 
 
 
+//Desafio 7 --------------------------------------- 
+const randomNumbers = [2, 10, 33, 47, 14, 7, 95, 32, 91];
+const primeNumbers = [];
+
+const primeNumbersVerification = () => {
+   randomNumbers.map((number) => {
+      const checkPrime = number / 2;
+      const primeVerification = Number.isInteger(checkPrime);
+
+      if(number === 2 || primeVerification === false) {
+          primeNumbers.push(number);
+      }
+
+   })
+}
+
+primeNumbersVerification();
+console.log("Desafio 7:");
+console.log(primeNumbers)
+console.log("----------------------------------")
