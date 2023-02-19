@@ -47,6 +47,26 @@ const verifyCheckbox = () => {
 }
 
 
+//Desafio 4 ---------------------------------------
+const send = $("#send");
+const salary = $("#salary").val();
+
+$(document).ready(function() {
+    send.attr('disabled', 'disabled');
+ 
+    $('input[type=text]').on('input', function() {
+        if ($(this).val() !== '') {
+            send.removeAttr("disabled");
+        }
+        else {
+            send.attr('disabled', 'disabled');
+        }
+    });
+});
+
+
+
+
 
 
 
