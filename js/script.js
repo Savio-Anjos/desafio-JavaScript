@@ -201,8 +201,9 @@ const identifyPrimeNumbers = () => {
 
       if(number === 2 || primeVerification === false) {
           if(index === 4) {
-            console.log(number)
             const filteredList = randomNumbers.filter(numberFilter => numberFilter != number)
+      
+            console.log("Desafio 8:");
             console.log("Array com o quinto número removido:")
             console.log(filteredList)
 
@@ -251,4 +252,25 @@ console.log("----------------------------------")
 
 
 
+//Desafio 9 ---------------------------------------
+
+console.log("Desafio 9:(Digite o numero no input)");
+const usingInput = (event) => {
+   const data = document.getElementById('data').value;
+   const dataInt = parseInt(data) 
+   
+   if(dataInt != typeof(number)) {
+      console.log("R$ " + data + ",00")
+   } else {
+      console.log("Esse valor não é valido!")
+   }
+  
+}
+
+
+
+
+
+
+ 
 
