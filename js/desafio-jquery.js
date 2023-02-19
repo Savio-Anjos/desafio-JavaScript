@@ -11,5 +11,15 @@ const validateInput = () => {
     console.log("----------------------------------");
 }
 
+//Desafio 2 ---------------------------------------
 
+const verifyCheckbox = () => {
+   const checkbox = $('#alert');
+
+   if(checkbox.is(":checked")) {
+     console.log("O usuário deve ser alertado!")
+   } else {
+    console.log("O usuário não deseja ser alertado!")
+   }
+}
 
