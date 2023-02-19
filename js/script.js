@@ -1,3 +1,4 @@
+
 //Desafio 1 ---------------------------------------
 
  const user = '{"nome": "Pedro", "idade": 30, "profissão": "professor" }';
@@ -272,20 +273,53 @@ const usingInput = (event) => {
 
 //Desafio 10 ---------------------------------------
 
-const numerosFracionados = [1.2, 23.3, 45.4, 33.7, 33.4];
-const numerosInteiros = [];
+const fractionalNumbers = [1.2, 23.3, 45.4, 33.7, 33.4];
+const wholeNumbers = [];
 
 const usingNumbers = () => {
-   numerosFracionados.map((number) => {
+   fractionalNumbers.map((number) => {
       const numeroInteiro = parseInt(number);
-      numerosInteiros.push(numeroInteiro)
+      wholeNumbers.push(numeroInteiro)
    })
 }
 
 usingNumbers();
 console.log("Desafio 10:");
-console.log(numerosInteiros);
-console.log("----------------------------------")
+console.log(wholeNumbers);
+console.log("----------------------------------");
 
- 
 
+
+
+//Desafio 10 ---------------------------------------
+const userTwo = {
+     name: "Roberto",
+     idade: "33",
+     formado:"Sim",
+     escolaridade:{
+     instituicao1:"UNIVERSIDADE MG, UNIVERSIDADE SP, UNIVERSIDADE PR, UNIVERSADE RS",
+     instituicao2: "Preencher essa informação",
+},
+}
+
+const manipulatingUser = () => {
+   const instituicao = userTwo.escolaridade.instituicao1;
+   //Separando valores da propriedade
+   const arrayInstituicao = instituicao.split(",");
+
+   // Adicionando novos items ao array
+   const novasInstituicoes = [ " UNIVERSIDADE BA", "UNIVERSIDADE RJ"];
+   const totalInstituicoes = arrayInstituicao.concat(novasInstituicoes);
+   
+   //Adicionando 3 novas propriedades ao objeto
+   userTwo.endereco = ["Belém", "Nazaré"," Avenida Governador José Malcher"];
+   userTwo.nacionalidade = "Brasileiro"
+   userTwo.situacao = "Completo"
+
+   userTwo.instituicao1 = totalInstituicoes;
+   console.log("Desafio 10:");
+   console.log(userTwo)
+   console.log("----------------------------------");
+}
+
+manipulatingUser()
