@@ -73,10 +73,3 @@ $(function(){
       thousands:'.', decimal:',',
       affixesStay: true});
 })
-
-
-
-
-
-
-
