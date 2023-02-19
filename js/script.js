@@ -167,7 +167,7 @@ console.log("----------------------------------")
 
 
 //Desafio 7 --------------------------------------- 
-const randomNumbers = [2, 10, 33, 47, 14, 7, 95, 32, 91];
+const randomNumbers = [2, 10, 33, 22, 47, 7, 14, 95, 32, 91];
 const primeNumbers = [];
 
 const primeNumbersVerification = () => {
@@ -186,3 +186,69 @@ primeNumbersVerification();
 console.log("Desafio 7:");
 console.log(primeNumbers)
 console.log("----------------------------------")
+
+
+
+//Desafio 8 --------------------------------------- 
+const arrayRandomNumbers  = [];
+const primeNumbersRandom  = [];
+let limitedPrimeNumbers = [];
+
+const identifyPrimeNumbers = () => {
+   randomNumbers.map((number, index) => {
+      const checkPrime = number / 2;
+      const primeVerification = Number.isInteger(checkPrime);
+
+      if(number === 2 || primeVerification === false) {
+          if(index === 4) {
+            console.log(number)
+            const filteredList = randomNumbers.filter(numberFilter => numberFilter != number)
+            console.log("Array com o quinto número removido:")
+            console.log(filteredList)
+
+            let sum = 0;
+
+            for(var i = 0; i<filteredList.length; i++) {
+               sum += filteredList[i];
+            }
+            console.log("Soma dos numeros do Array:")
+            console.log(sum);
+
+          } else {
+            const getRandom = (min, max) => {
+               return Math.floor(Math.random() * (max - min + 1)) + min;
+           }
+           
+           for (let i = 0 ; i < 30 ; i++){
+             arrayRandomNumbers.push(getRandom(1, 60));
+             
+           }
+
+           arrayRandomNumbers.map((number) => {
+            const checkRandomPrime = number / 2;
+            const primeRandomVerification = Number.isInteger(checkRandomPrime);
+
+            if(number === 2 || primeRandomVerification === false) {
+               primeNumbersRandom.push(number);
+
+               //Limitação do tamanho do array
+               limitedPrimeNumbers = primeNumbersRandom.slice(0, 20)
+               
+            }
+           })
+         
+          }
+      }
+
+   })
+
+}
+
+identifyPrimeNumbers();
+console.log("Array Randômico:")
+console.log(limitedPrimeNumbers);
+console.log("----------------------------------")
+
+
+
+
