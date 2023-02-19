@@ -324,7 +324,3 @@ const manipulatingUser = () => {
 
 manipulatingUser();
 
-
-
-
-console.log("Desafios jquery")
