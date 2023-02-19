@@ -65,6 +65,16 @@ $(document).ready(function() {
 });
 
 
+//Desafio 5 ---------------------------------------
+$(function(){
+    $('#salary').maskMoney({
+      prefix:'R$ ',
+      allowNegative: true,
+      thousands:'.', decimal:',',
+      affixesStay: true});
+})
+
+
 
 
 
