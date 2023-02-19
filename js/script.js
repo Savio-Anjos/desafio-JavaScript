@@ -1,4 +1,4 @@
-
+console.log("Desafios JavaScript puro")
 //Desafio 1 ---------------------------------------
 
  const user = '{"nome": "Pedro", "idade": 30, "profissão": "professor" }';
@@ -322,4 +322,9 @@ const manipulatingUser = () => {
    console.log("----------------------------------");
 }
 
-manipulatingUser()
+manipulatingUser();
+
+
+
+
+console.log("Desafios jquery")
