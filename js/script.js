@@ -270,7 +270,22 @@ const usingInput = (event) => {
 
 
 
+//Desafio 10 ---------------------------------------
 
+const numerosFracionados = [1.2, 23.3, 45.4, 33.7, 33.4];
+const numerosInteiros = [];
+
+const usingNumbers = () => {
+   numerosFracionados.map((number) => {
+      const numeroInteiro = parseInt(number);
+      numerosInteiros.push(numeroInteiro)
+   })
+}
+
+usingNumbers();
+console.log("Desafio 10:");
+console.log(numerosInteiros);
+console.log("----------------------------------")
 
  
 
