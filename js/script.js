@@ -90,7 +90,7 @@ const students = [
 
 
 //Desafio 4 --------------------------------------- 
-var variavelGlobal = "JavaScript";
+let variavelGlobal = "JavaScript";
 const variaveis = () => {
    let variavelLocal = "Python";
    
@@ -144,7 +144,7 @@ orderArray();
 
 //Desafio 6 --------------------------------------- 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-      const evensNumbers = [];
+const evensNumbers = [];
 const evenNumbersVerification = () => {
    numbers.map((number) => {
       const checkNumber = number / 2
@@ -317,7 +317,7 @@ const manipulatingUser = () => {
    userTwo.situacao = "Completo"
 
    userTwo.instituicao1 = totalInstituicoes;
-   console.log("Desafio 10:");
+   console.log("Desafio 11:");
    console.log(userTwo)
    console.log("----------------------------------");
 }
